@@ -1,0 +1,211 @@
+body{
+    margin: 0px 4%;
+}
+
+#circulo{
+    background-color: var(--color-purple-2);
+    height: 11.17px;
+    width: 11.17px;
+    border-radius: 100%;
+    margin-right: 10px;
+    color: var(--color-transparent);
+    
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: solid black 1px;
+    padding: 20px 0px;
+}
+
+#logo-top-left{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#imglogo{
+    margin-top: 2px;
+}
+
+#div-setores-heading{
+    background-color: var(--color-purple-1);
+    height: 52px;
+    padding: 10px;
+    display: flex;
+}
+
+#selecionar-setor{
+    color: white;
+
+    width: 171px;
+    height: 34px;
+
+    margin: auto;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 200;
+    font-size: 18px;
+    line-height: 27px;
+    text-align: center;
+}
+
+#img-setor{
+    position: relative;
+    right: 0px;
+    top: 0px;
+}
+
+#div-ul{
+ height: 280px;
+ background: var(--color-white-2);
+
+}
+#ul-empresas{
+    height: 290px;
+    list-style: none;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    width: 100%;
+    margin-right: 0px;
+}
+.li-card-empresa{
+    background-color: var(--color-white-1);
+    height: 211px;
+    width: 241px;
+    padding: 14px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-bottom: 2px var(--color-purple-1) solid;
+    margin-right: 20px;
+    flex-shrink: 0;
+
+}
+.h2-nome-empresa{
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+
+}
+.p-horas{
+        
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+
+}
+.p-setor{
+    margin: 16px 0px;
+    color: var(--color-purple-1);
+    border: var(--color-purple-1) solid 1px;
+    width: 80px;
+    
+    padding: 6px 16px;
+    text-align: center;
+    border-radius: 100px;
+}
+#img-dashboard{
+    width: 45%;
+    display: none;
+}
+
+#login{
+    display: none;
+}
+#cadastro{
+    display: none;
+}
+
+
+@media (min-width: 1000px){
+    #div-main-dashboard{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-between;
+        height: 50%;
+    }
+    header{
+        margin-bottom: 30px;
+    }
+    #img-dashboard{
+        width: 48%;
+        display: block;
+        height: 83vh;
+
+    }
+    #div-ul{
+        width: 48%;
+        height: 83vh;
+        
+    }
+    #ul-empresas{
+        flex-direction: column;
+        overflow-x: unset;
+        overflow-y: auto;
+        height: 90%;
+        width: 100%;
+        margin: 0px auto;
+    }
+    .li-card-empresa{
+        width: 97%;
+        height: 135px;
+        margin-bottom: 15px;
+        margin-right: 0px;
+    }
+    #img-colunas{
+        display: none;
+    }
+    #div-top-right{
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+    }
+    #login{
+        display: block;
+
+        font-family: "Inter";
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 21px;
+        letter-spacing: 0em;
+        text-align: center;
+        color: var(--color-purple-1);
+        background-color: white;
+        
+        padding: 13px 29px;
+        
+        border: var(--color-purple-1) solid 1px;
+
+
+    }
+    #cadastro{
+        display: block;
+
+        background-color: var(--color-purple-1);
+        color: white;
+        font-family: Inter;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 22px;
+        letter-spacing: 0em;
+        text-align: center;
+
+        padding: 13px 29px;
+        border: 1px solid var(--color-purple-1);
+    }
+
+
+}
+

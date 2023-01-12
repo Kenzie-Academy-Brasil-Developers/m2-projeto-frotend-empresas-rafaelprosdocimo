@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+:root{
+    --color-grey-1: #212529;
+    --color-grey-2: #343A40;
+    --color-grey-3: #464F57;
+    --color-purple-1: #4200FF;
+    --color-purple-2: #4400ff83;
+
+    --color-transparent: #464f5700;
+    --color-white-1: #FFFFFF;
+    --color-white-2: #f8f8f8;
+
+    --font-1: 1.75rem;
+    --font-2: 1rem;
+    --font-3: 0.875rem;
+}
