@@ -1,0 +1,207 @@
+main{
+    background-image: url(/assets/Rectangle\ 7.png);
+    padding-top: 30px;
+    background-size: cover;
+    height: 90vh;
+}
+
+
+#circulo{
+    background-color: var(--color-purple-2);
+    height: 11.17px;
+    width: 11.17px;
+    border-radius: 100%;
+    margin-right: 10px;
+    color: var(--color-transparent);
+    
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: solid black 1px;
+    padding: 20px 0px;
+}
+
+#logo-top-left{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 4%;
+
+}
+
+#imglogo{
+    margin-top: 2px;
+}
+
+
+
+#button-home{
+    display: none;
+}
+#button-login{
+    display: none;
+}
+
+
+.input-cadastro{
+    padding: 17px 0px 13px 20px;
+    color:  #00000080;
+    border: solid 1px  #00000080;
+        
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    
+}
+
+#ou{
+        
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    /* identical to box height */
+
+    text-align: center;
+
+}
+#login-text{
+    
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 19px;
+
+}
+#button-login-form{
+    height: 50px;
+    background-color: var(--color-purple-1);
+    color: white;
+
+        
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    /* identical to box height */
+
+    text-align: center;
+
+    border: 0px;
+}
+#button-cadastro{
+    display: none;
+}
+#Cadastre{
+    width: 100%;
+    height: 50px;
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    /* identical to box height */
+
+    text-align: center;
+
+    border: 1px solid var(--color-purple-1);
+    color: var(--color-purple-1);
+}
+
+#input-nome{
+    margin-top: 15px;
+}
+
+#cadastro{
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+
+        
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 48px;
+    padding-top: 40px;
+    background: #FFFFFFF2;
+    padding-bottom: 40px;
+    padding-left: 4%;
+    padding-right: 4%;
+
+
+}
+
+#form-cadastro{
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+}
+
+
+#div-top-right{
+    margin-right: 4%;
+}
+
+@media (min-width: 1000px){
+    #cadastro{
+        padding-left: 40px;
+        padding-right: 40px;   
+        width: 400px;
+        margin: auto;
+    }
+
+    #img-colunas{
+        display: none;
+    }
+    #div-top-right{
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+    }
+    
+    #button-home
+    {
+        display: block;
+
+        font-family: "Inter";
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 21px;
+        letter-spacing: 0em;
+        text-align: center;
+        color: var(--color-purple-1);
+        background-color: white;
+        
+        padding: 13px 29px;
+        
+        border: var(--color-purple-1) solid 1px;
+
+
+    }
+    #button-cadastro{
+        display: block;
+
+        background-color: var(--color-purple-1);
+        color: white;
+        font-family: Inter;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 22px;
+        letter-spacing: 0em;
+        text-align: center;
+
+        padding: 13px 29px;
+        border: 1px solid var(--color-purple-1);
+    }
+
+}

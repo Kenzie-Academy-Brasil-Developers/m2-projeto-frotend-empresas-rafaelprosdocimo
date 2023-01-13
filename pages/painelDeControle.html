@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/style/painel.css">
+    <link rel="stylesheet" href="/style/globalStyle.css">
+    <link rel="stylesheet" href="">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <style> @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap'); </style>
+    
+</head>
+<body>
+    <header>
+        <div id="logo-top-left">
+            <p id="circulo"> </p>
+            <img id="imglogo" src="/assets/Kenzie Empresas.png" alt="Kenzie Empresas">
+        </div>
+        <div id="div-top-right">
+            <a href="/index.html">
+            <button id="button-logout">Logout</button></a>
+            
+        </div>
+    </header>
+    <main>
+        <section id="section-user">
+            <div>
+                <h2>Username</h2>
+                <div id="div-user-contents">
+                    <p>Email: meuemail@gmail.com</p>
+                    <p>Pleno</p>
+                    <p>Home Office</p>
+                </div>
+            </div>
+            <button id="button-edit"><img src="/assets/iconelapis.png" alt=""></button>
+        </section>
+        <section id="section-conexoes">
+            <!--
+                Caso o cara ainda não tenha conexões 
+                
+                <h2 id="h2-encontrado">Você ainda não foi encontrado</h2>
+            
+            -->
+            <!--
+
+                Caso ele tenha! : 
+                
+                <h2 id="company">Company Name - Department Name</h2>
+                <div id="div-wrapper-colegas">
+                    <ul id="ul-colegas">
+                        <li class="colegas-card">
+                            <h3 class="h3-nome">Nome do colega</h3>
+                            <p class="p-posição">Senior</p>
+                        </li>
+                        <li class="colegas-card">
+                            <h3 class="h3-nome">Nome do colega</h3>
+                            <p class="p-posição">Senior</p>
+                        </li>
+                        <li class="colegas-card">
+                            <h3 class="h3-nome">Nome do colega</h3>
+                            <p class="p-posição">Senior</p>
+                        </li>
+                        <li class="colegas-card">
+                            <h3 class="h3-nome">Nome do colega</h3>
+                            <p class="p-posição">Senior</p>
+                        </li>
+                        <li class="colegas-card">
+                            <h3 class="h3-nome">Nome do colega</h3>
+                            <p class="p-posição">Senior</p>
+                        </li>
+                        <li class="colegas-card">
+                            <h3 class="h3-nome">Nome do colega</h3>
+                            <p class="p-posição">Senior</p>
+                        </li>
+                        <li class="colegas-card">
+                            <h3 class="h3-nome">Nome do colega</h3>
+                            <p class="p-posição">Senior</p>
+                        </li>
+                        <li class="colegas-card">
+                            <h3 class="h3-nome">Nome do colega</h3>
+                            <p class="p-posição">Senior</p>
+                        </li>
+                    </ul>
+                </div>
+            -->
+            
+            
+        </section>
+        <!--
+                Caso ele seja um Admin:
+            
+            -->
+
+            <section id="section-departamentos">
+                <div id="div-departamentos">
+                    <h3>Departamentos</h3>
+                    <select name="selecionar Empresa" id="select-empresa">
+                        <option id="option-placeholder" value="" disabled selected>Selecionar Empresa</option>
+
+                    </select>
+                    <button id="button-criar"><img src="/assets/maizinho.png" alt=""> <p>Criar</p></button>
+                </div>
+
+                <div id="div-departamentos-wrapper">
+                    <ul id="ul-departamento">
+                        <li class="card-departamento" >
+                            <h3 class="h3-departamento" >Department Name</h3>
+                            <p class="p-descrição" >Department Description</p>
+                            <p class="p-nome">Company Name</p>
+                            <div class="div-icones">
+                                <img class="img-olho" src="/assets/visibility_FILL0_wght400_GRAD0_opsz48 1.png" alt="">
+                                <img class="img-lapis" src="/assets/edit_FILL0_wght400_GRAD0_opsz48 (1) 1.png" alt="">
+                                <img class="img-delete" src="/assets/delete_FILL0_wght400_GRAD0_opsz48 1.png" alt="">
+                            </div>
+                            <li class="card-departamento" >
+                                <h3 class="h3-departamento" >Department Name</h3>
+                                <p class="p-descrição" >Department Description</p>
+                                <p class="p-nome">Company Name</p>
+                                <div class="div-icones">
+                                    <img class="img-olho" src="/assets/visibility_FILL0_wght400_GRAD0_opsz48 1.png" alt="">
+                                    <img class="img-lapis" src="/assets/edit_FILL0_wght400_GRAD0_opsz48 (1) 1.png" alt="">
+                                    <img class="img-delete" src="/assets/delete_FILL0_wght400_GRAD0_opsz48 1.png" alt="">
+                                </div>
+                            </li>
+                            <li class="card-departamento" >
+                                <h3 class="h3-departamento" >Department Name</h3>
+                                <p class="p-descrição" >Department Description</p>
+                                <p class="p-nome">Company Name</p>
+                                <div class="div-icones">
+                                    <img class="img-olho" src="/assets/visibility_FILL0_wght400_GRAD0_opsz48 1.png" alt="">
+                                    <img class="img-lapis" src="/assets/edit_FILL0_wght400_GRAD0_opsz48 (1) 1.png" alt="">
+                                    <img class="img-delete" src="/assets/delete_FILL0_wght400_GRAD0_opsz48 1.png" alt="">
+                                </div>
+                            </li>
+                            <li class="card-departamento" >
+                                <h3 class="h3-departamento" >Department Name</h3>
+                                <p class="p-descrição" >Department Description</p>
+                                <p class="p-nome">Company Name</p>
+                                <div class="div-icones">
+                                    <img class="img-olho" src="/assets/visibility_FILL0_wght400_GRAD0_opsz48 1.png" alt="">
+                                    <img class="img-lapis" src="/assets/edit_FILL0_wght400_GRAD0_opsz48 (1) 1.png" alt="">
+                                    <img class="img-delete" src="/assets/delete_FILL0_wght400_GRAD0_opsz48 1.png" alt="">
+                                </div>
+                            </li>
+                        </li>
+
+                    </ul>
+
+                </div>
+                <section id="section-usuarios">
+                    <h3 id="h3-Usuários">Usuários cadastrados</h3>
+                    <div>
+                        <ul id="ul-departamento">
+                            <li class="card-departamento" >
+                                <h3 class="h3-departamento" >Department Name</h3>
+                                <p class="p-descrição" >Department Description</p>
+                                <p class="p-nome">Company Name</p>
+                                <div class="div-icones">
+                                    <img class="img-lapis" src="/assets/edit_FILL0_wght400_GRAD0_opsz48 (1) 1.png" alt="">
+                                    <img class="img-delete" src="/assets/delete_FILL0_wght400_GRAD0_opsz48 1.png" alt="">
+                                </div>
+                                <li class="card-departamento" >
+                                    <h3 class="h3-departamento" >Department Name</h3>
+                                    <p class="p-descrição" >Department Description</p>
+                                    <p class="p-nome">Company Name</p>
+                                    <div class="div-icones">
+                                        <img class="img-lapis" src="/assets/edit_FILL0_wght400_GRAD0_opsz48 (1) 1.png" alt="">
+                                        <img class="img-delete" src="/assets/delete_FILL0_wght400_GRAD0_opsz48 1.png" alt="">
+                                    </div>
+                                </li>
+                                <li class="card-departamento" >
+                                    <h3 class="h3-departamento" >Department Name</h3>
+                                    <p class="p-descrição" >Department Description</p>
+                                    <p class="p-nome">Company Name</p>
+                                    <div class="div-icones">
+                                        <img class="img-lapis" src="/assets/edit_FILL0_wght400_GRAD0_opsz48 (1) 1.png" alt="">
+                                        <img class="img-delete" src="/assets/delete_FILL0_wght400_GRAD0_opsz48 1.png" alt="">
+                                    </div>
+                                </li>
+                                <li class="card-departamento" >
+                                    <h3 class="h3-departamento" >Department Name</h3>
+                                    <p class="p-descrição" >Department Description</p>
+                                    <p class="p-nome">Company Name</p>
+                                    <div class="div-icones">
+                                        <img class="img-lapis" src="/assets/edit_FILL0_wght400_GRAD0_opsz48 (1) 1.png" alt="">
+                                        <img class="img-delete" src="/assets/delete_FILL0_wght400_GRAD0_opsz48 1.png" alt="">
+                                    </div>
+                                </li>
+                            </li>
+    
+                        </ul>
+                    </div>
+                </section>
+            </section>
+    </main>
+</body>
+</html>
