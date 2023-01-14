@@ -109,7 +109,7 @@ header{
     margin: 16px 0px;
     color: var(--color-purple-1);
     border: var(--color-purple-1) solid 1px;
-    width: 80px;
+    max-width:  180px;
     
     padding: 6px 16px;
     text-align: center;
@@ -209,3 +209,16 @@ header{
 
 }
 
+#button-dropdown{
+    background: none;
+    border: none;
+
+}
+
+
+#select-setor{
+    width: 100%;
+    border: 1px solid var(--color-purple-1);
+    height: 45px;
+    text-align: center;
+}
