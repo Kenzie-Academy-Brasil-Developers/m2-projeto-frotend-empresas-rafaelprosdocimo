@@ -20,6 +20,38 @@ async function getInputsLogin()
 }
 
 
+async function getAuthorization(token) {
+    console.log(await token)
+    const tokenGET = await token
+    const userValidation = await fetch('http://localhost:6278/auth/validate_user',
+    {
+        method: 'GET',
+        headers: {
+            "Content-Type": "application/json",
+            Authorization: `Bearer ${tokenGET.token}`
+        }
+    })
+
+    .then((response) => {
+        return response.json()
+    })
+
+    .then((response) => {
+        return response
+    })
+
+    return userValidation
+}   
+
+async function getUser(dataUser) {
+    const token = JSON.parse(localStorage.getItem(`token-${dataUser.email}`))
+    console.log(token.token)
+    return token;
+}
+
+
+
+
 async function login(data) {
     
     const response = await fetch('http://localhost:6278/auth/login', {
@@ -34,7 +66,10 @@ async function login(data) {
     
         const loginUserJson = await response.json()
         console.log(loginUserJson)
-        localStorage.setItem(``)
+        localStorage.setItem(`token-${data.email}`, JSON.stringify(loginUserJson))
+        const authorizedSepa = await getAuthorization(getUser(data))
+        console.log(authorizedSepa)
+
 
 }
 
