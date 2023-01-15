@@ -1,3 +1,4 @@
+
 async function getInputsLogin() 
 {
     const itensLogin = document.querySelectorAll(".input-cadastro")
@@ -68,10 +69,27 @@ async function login(data) {
         console.log(loginUserJson)
         localStorage.setItem(`token-${data.email}`, JSON.stringify(loginUserJson))
         const authorizedSepa = await getAuthorization(getUser(data))
-        console.log(authorizedSepa)
+        console.log(authorizedSepa.is_admin)
+        if (!response.ok) {
+            window.location.replace("/pages/cadastro.html")
+            
+        }
+        else{
+            localStorage.setItem("loggedUserInfo", JSON.stringify(data))
+
+            localStorage.setItem("isLoggedBool", true)
+            window.location.replace("/pages/painelDeControle.html")
+            
+        }
+        
+        
+
+        return 
 
 
 }
 
 
 getInputsLogin()
+
+//dar uma olhada no local storage e onde eles tão sendo criados.
