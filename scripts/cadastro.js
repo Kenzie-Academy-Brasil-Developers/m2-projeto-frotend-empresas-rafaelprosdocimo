@@ -15,8 +15,7 @@ async function getInputs()
         });
         const userDataJSON = userData.json
         const request = await register(userData);
-
-        localStorage.setItem('@KenzieEmpresas:user', JSON.stringify(request))
+        console.dir(request)
     })
     return userData
 }
@@ -32,11 +31,16 @@ async function register(data) {
                 'Content-Type': 'application/json'
             },
         }).catch((err) => console.log(err))
-            
+        localStorage.setItem('@KenzieEmpresas:user',JSON.stringify(data))
+        
         const newUserJson = await response.json()
-        console.log(newUserJson)
+        localStorage.setItem(`${ JSON.stringify(newUserJson.username)}`, JSON.stringify(newUserJson))
+
+        console.log(newUserJson.error
+            )
         if (!response.ok) {
-            console.log('erro')
+            console.log(error)
+            window.location.replace("/pages/login.html")
             //toast(loginDataJson.message, "#C20803");
           } else {
             //toast("Login realizado com sucesso", "#08C203");
@@ -44,7 +48,7 @@ async function register(data) {
           }
         
 
-      return loginDataJson;
+      return newUserJson;
 } 
 
 
