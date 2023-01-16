@@ -54,7 +54,7 @@ async function getUser(dataUser) {
 
 
 async function login(data) {
-    
+    console.log(data)
     const response = await fetch('http://localhost:6278/auth/login', {
         method: 'POST',
             body: JSON.stringify(data),
@@ -69,17 +69,23 @@ async function login(data) {
         console.log(loginUserJson)
         localStorage.setItem(`token-${data.email}`, JSON.stringify(loginUserJson))
         const authorizedSepa = await getAuthorization(getUser(data))
-        console.log(authorizedSepa.is_admin)
+        console.log(authorizedSepa)
         if (!response.ok) {
-            window.location.replace("/pages/cadastro.html")
+            console.log(Error)
+            console.log(response)
+            //window.location.replace("/pages/cadastro.html")
             
         }
         else{
             localStorage.setItem("loggedUserInfo", JSON.stringify(data))
-
-            localStorage.setItem("isLoggedBool", true)
-            window.location.replace("/pages/painelDeControle.html")
             
+            localStorage.setItem("isLoggedBool", true)
+            if (authorizedSepa.is_admin) {
+                window.location.replace("/pages/admin.html")
+            }
+            else{
+                window.location.replace("/pages/painelDeControle.html")
+            }
         }
         
         
